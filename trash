@@ -1,0 +1,14 @@
+local function dodge_effect(dt)
+-- state와 같은 이름의 폴더 (dodge_state) 있으면 해당 state 출력할 때 가산레이어로 출력
+    lg.setBlendMode('add')
+    player.ani:draw('effect_skill', player.dir, 0, 15, dt)
+    lg.setBlendMode('alpha')
+end
+
+
+
+if self.damaged_delay > 0 then
+  lg.setColor(0,.2,.8)
+else
+  lg.setColor(1,1,1)
+end
