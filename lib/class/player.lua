@@ -145,8 +145,8 @@ function Player:draw(dt)
   self.ani:draw(player, dt)
   lg.setColor(1,1,1)
 
-  lg.print(self.state)
-  lg.print(self.attack_num, 50, 0)
+  --lg.print(self.state)
+  --lg.print(self.attack_num, 50, 0)
 end
 
 

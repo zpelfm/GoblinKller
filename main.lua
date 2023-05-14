@@ -20,10 +20,10 @@ function love.draw()
   --player:draw('idle', 1, tick.dt)
   --system.draw()
   page:draw(tick.dt)
-  Debug()
+  --Debug()
 end
 
 function love.update()
   page:update(tick.dt)
-  
+
 end

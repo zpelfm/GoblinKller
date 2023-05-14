@@ -42,6 +42,8 @@ end
 
 
 function love.keypressed(key)
+  if key == "escape" then love.event.push("quit") end
+
   key_state(key)
   if key_move(key) ~= 0 then
     edit('dir', key_move(key))
